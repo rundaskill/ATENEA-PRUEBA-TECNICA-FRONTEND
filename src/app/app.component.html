@@ -1,0 +1,8 @@
+<p-button label="Area" (click)="menu='area'"></p-button>
+<p-button label="Persona" (click)="menu='person'"></p-button>
+<p-button label="Activo Fijo" (click)="menu='asset'"></p-button>
+
+<app-Area *ngIf="menu=='area'"></app-Area>
+
+<app-Person *ngIf="menu=='person'"></app-Person>
+<app-FixedAsset *ngIf="menu=='asset'"></app-FixedAsset>
